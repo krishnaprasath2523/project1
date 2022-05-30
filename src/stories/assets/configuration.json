@@ -1,0 +1,14 @@
+{
+  "editor": {
+    "spellCheck": {
+      "lang": "en_US",
+      "autoSearch": true,
+      "enableGrammar": false,
+      "serviceProtocol": "https",
+      "serviceHost": "nonprod-webspellcheck.kiteaai.org",
+      "servicePort": 443,
+      "servicePath": "wscservice/api",
+      "srcUrl": "https://nonprod-webspellcheck.kiteaai.org/wscservice/wscbundle/wscbundle.js"
+    }
+  }
+}

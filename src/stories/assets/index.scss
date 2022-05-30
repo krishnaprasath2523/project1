@@ -1,0 +1,119 @@
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #2780e3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #613d7c !default;
+$pink:    #e83e8c !default;
+$red:     #920000 !default;
+$orange:  #f0ad4e !default;
+$yellow:  #ff7518 !default;
+$green:   #3fb618 !default;
+$teal:    #20c997 !default;
+$cyan:    #9954bb !default;
+
+// Default variable overrides here
+$kite-blue: #1560b7 !default;
+
+
+$theme-colors: (
+ "primary":       $kite-blue,
+ "secondary":     $gray-800,
+ "success":       $purple,
+ "info":          $cyan,
+ "warning":       $yellow,
+ "danger":        $red,
+ "light":         $gray-300,
+ "dark":          $gray-800
+) !default;
+
+$accordion-button-bg: $kite-blue;
+$accordion-button-active-bg: $kite-blue;
+$accordion-button-color: white;
+$accordion-button-active-color: white;
+$accordion-border-radius:  0px;
+$breadcrumb-divider: quote(">");
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+    background-color: $kite-blue;
+}
+
+input, select {
+    max-height: 40px;
+    max-width: 200px;
+    margin-left: 4px;
+}
+
+label {
+    margin-top: 2px;
+}
+
+.k-upload .k-dropzone {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 50px 8px;
+    background-color: #fff;
+    border: 2px dashed grey;
+    border-radius: 5px;
+}
+.text-right{
+    text-align: right;
+}
+.p-10{
+    padding: 10px;
+}
+.k-button.k-state-hover:not(.k-button-icon), .k-button:hover:not(.k-button-icon), .k-button:not(.k-button-icon) {
+    border-color: rgba(0,0,0,.08);
+    color: #fff;
+    background-color: #1560b7;
+    background-image: linear-gradient(#4273c6,#1560b7);
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.m-10 {
+    margin: 10px;
+  }
+.end-xs{
+    text-align: end;
+}
+
+legend {font-size:large; color: $kite-blue}
+
+// locking the header 
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background-color: $white;
+  }
+
+// giving space to the page content  
+.page-container {
+    margin-top: 200px;
+}
+
+
+
+div.locked-header {
+    position: sticky; 
+    top: 21.4vh; 
+    background-color: $gray-300; 
+    z-index: 400;
+    border-top: solid 1px $gray-500;
+    border-bottom: solid 1px $gray-500;
+}
