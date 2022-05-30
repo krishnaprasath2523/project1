@@ -1,0 +1,54 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import ItemLoader from '../ItemLoader';
+
+<Meta title='Create Items/ActingForces' component={ItemLoader} />
+
+export const Template = (args) => (
+  <ItemLoader
+    {...args}
+    newItem={true}
+    data={{
+      item: {
+        id: -1,
+        name: '',
+        assessment_program_id: 0,
+        item_type_id: 0,
+        item_type_code: '',
+        item_json: { itemTypeCode: 'af' },
+        user_id: 0
+      }
+    }}
+  ></ItemLoader>
+);
+
+# Acting Forces
+
+<Story name='NewItem'>{Template.bind({})}</Story>
+
+# Test Scenarios
+
+## Content
+
+- [ ] The User will be able to select Acting forces item and open the content accordion.
+
+- [ ] The User will be able to save the Item by giving required fields. 
+
+- [ ] User will be also able to edit the Item after saving.
+
+- [ ] User will be able to set Item dimensions for the item.
+
+- [ ] The User will be able enter content in stem.
+
+- [ ] The User will be able to add image into Image panel by clicking on select image button.
+
+- [ ] User can select square, circle, triangle, plus, label, arrow by clicking the check box.
+
+- [ ] User can able to add label text by using label textbox.
+
+- [ ] User can able add additional symbols by clicking add symbol button.
+
+## Attributes and Metadata
+
+- [ ] User will be able to open the attribute and metadata accordion and will be able to select Item metadata, content codes, cognitive settings, tags and item details.
+
+- [ ] These are mandatory fields and should be filled before saving the Item in Final /Approved state.
